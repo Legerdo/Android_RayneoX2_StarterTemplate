@@ -36,7 +36,7 @@ android {
 
 dependencies {
     // Import AAR
-    implementation(fileTree("libs"))
+    implementation fileTree(dir: "libs", include: ["*.aar"])
 
     // Android X
     implementation libs.androidx.core.ktx.v180
